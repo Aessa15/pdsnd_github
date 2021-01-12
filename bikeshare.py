@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-import calendar
+import calendar as cal
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -104,7 +104,7 @@ def time_stats(df):
     popular_hour = df['hour'].mode()[0]
 
 
-    print('The most popular month is', calendar.month_name[popular_month])
+    print('The most popular month is', cal.month_name[popular_month])
     print('\nThe most popular day of the week is', popular_dow)
     print('\nThe most popular hour is', popular_hour)
     print("\nThis took %s seconds." % (time.time() - start_time))
@@ -146,7 +146,7 @@ def trip_duration_stats(df):
     total_travel_time = int(df['Trip Duration'].sum())
 
     # display mean travel time
-    mean_travel_time = round(df['Trip Duration'].mean(),2)
+    mean_travel_time = round(df['Trip Duration'].mean(),3)
 
     print('The total travel time is', total_travel_time, "seconds")
     print('\nThe mean travel time is', mean_travel_time, "seconds")
@@ -202,8 +202,8 @@ def main():
         df = load_data(city, month, day)
 
         time_stats(df)
-        station_stats(df)
         trip_duration_stats(df)
+        station_stats(df)
         user_stats(df)
         raw_data(df)
 
