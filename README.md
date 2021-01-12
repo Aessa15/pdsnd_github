@@ -12,6 +12,7 @@ Replace the Project Title. (done)
 Describe what your project is about and what it does
 
 Interactive program that takes user's input and display processed data.
+The program uses numpy and pandas libraries for data analysis to solve tasks.
 
 ### Files used
 Include the files used
