@@ -1,7 +1,7 @@
 import time
 import pandas as pd
 import numpy as np
-import calendar
+import calendar as cal
 
 CITY_DATA = { 'chicago': 'chicago.csv',
               'new york city': 'new_york_city.csv',
@@ -104,7 +104,7 @@ def time_stats(df):
     popular_hour = df['hour'].mode()[0]
 
 
-    print('The most popular month is', calendar.month_name[popular_month])
+    print('The most popular month is', cal.month_name[popular_month])
     print('\nThe most popular day of the week is', popular_dow)
     print('\nThe most popular hour is', popular_hour)
     print("\nThis took %s seconds." % (time.time() - start_time))
