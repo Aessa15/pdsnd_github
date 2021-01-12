@@ -24,4 +24,5 @@ washington.csv
 ### Credits
 It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
 
-It's included in the readme.txt file provided with the code file.
+It's included in the readme.txt file provided with the code file. 
+The file includes the sources used in building the program
