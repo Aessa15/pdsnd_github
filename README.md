@@ -12,7 +12,7 @@ Replace the Project Title. (done)
 ### Description
 Describe what your project is about and what it does
 
-Interactive program that takes user's input and display processed data.
+Interactive program that takes user's input and display processed data for the cities of chicago, washington, and new york city.
 The program uses numpy and pandas libraries for data analysis to solve tasks.
 
 ### Files used
