@@ -1,7 +1,8 @@
 ### Date created
 Include the date you created this project and README file.
 
-I did
+The date the projoct was created is Jan 8th, 2020
+readme.txt is included with project file.
 
 ### Bikeshare Project
 Replace the Project Title. (done)
